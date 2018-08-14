@@ -5,12 +5,10 @@ import re
 def main():
 	star_count = 0
 	sub_star_count = 0
-
 	details = {}
 	counter = 0
 	sub_count = 0
-	for line in sys.stdin:
-		
+	for line in sys.stdin:		
 		if bool(line.strip()):
 			line_content = line.rstrip("\n")
 			line_details = {}
