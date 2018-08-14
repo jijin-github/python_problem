@@ -52,8 +52,9 @@ def main():
 				if curr_count < next_count or next_count== 0:
 					replace_symbol = '+'
 				text = details[key]['sub_items'][sub_key][1].replace('.'*curr_count, replace_symbol)
-				if next_count == 0:		
-					print ' '*curr_count+text+" "+details[key]['sub_items'][sub_key+1][1]+" "+details[key]['sub_items'][sub_key+2][1]
+				if next_count == 0:
+					spaces = ' '*curr_count 	
+					print spaces+text+"\n  "+spaces+details[key]['sub_items'][sub_key+1][1]+"\n  "+spaces+details[key]['sub_items'][sub_key+2][1]
 				else:
 					print ' '*curr_count+text
 
